@@ -26,7 +26,7 @@ def add(args):
     if file_type == "--license":    #  can create 3 types of license, with user details added
 
         if file_arg == None:
-            contents = "Copyright (c) {} {} All Rights Reserved."
+            contents = "Copyright (c) {} {} All Rights Reserved.".format(user_name,str(datetime.now().year))
 
         elif file_arg.lower() == "mit":
             with open("../rsrc/MIT.txt") as file:
